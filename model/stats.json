@@ -1,0 +1,297 @@
+{
+ "raw_rows": 1025,
+ "clean_rows": 302,
+ "duplicates_removed": 723,
+ "n_features": 13,
+ "disease": 138,
+ "no_disease": 164,
+ "disease_share": 0.457,
+ "age_bands": [
+  {
+   "label": "25-29",
+   "count": 1
+  },
+  {
+   "label": "30-34",
+   "count": 2
+  },
+  {
+   "label": "35-39",
+   "count": 12
+  },
+  {
+   "label": "40-44",
+   "count": 40
+  },
+  {
+   "label": "45-49",
+   "count": 32
+  },
+  {
+   "label": "50-54",
+   "count": 56
+  },
+  {
+   "label": "55-59",
+   "count": 69
+  },
+  {
+   "label": "60-64",
+   "count": 49
+  },
+  {
+   "label": "65-69",
+   "count": 31
+  },
+  {
+   "label": "70-74",
+   "count": 8
+  },
+  {
+   "label": "75-79",
+   "count": 2
+  }
+ ],
+ "ranges": {
+  "age": [
+   29.0,
+   77.0
+  ],
+  "sex": [
+   0.0,
+   1.0
+  ],
+  "cp": [
+   0.0,
+   3.0
+  ],
+  "trestbps": [
+   94.0,
+   200.0
+  ],
+  "chol": [
+   126.0,
+   564.0
+  ],
+  "fbs": [
+   0.0,
+   1.0
+  ],
+  "restecg": [
+   0.0,
+   2.0
+  ],
+  "thalach": [
+   71.0,
+   202.0
+  ],
+  "exang": [
+   0.0,
+   1.0
+  ],
+  "oldpeak": [
+   0.0,
+   6.2
+  ],
+  "slope": [
+   0.0,
+   2.0
+  ],
+  "ca": [
+   0.0,
+   4.0
+  ],
+  "thal": [
+   0.0,
+   3.0
+  ]
+ },
+ "by_cp": [
+  {
+   "code": 0,
+   "label": "Code 0",
+   "n": 143,
+   "disease_rate": 0.727
+  },
+  {
+   "code": 1,
+   "label": "Code 1",
+   "n": 50,
+   "disease_rate": 0.18
+  },
+  {
+   "code": 2,
+   "label": "Code 2",
+   "n": 86,
+   "disease_rate": 0.209
+  },
+  {
+   "code": 3,
+   "label": "Code 3",
+   "n": 23,
+   "disease_rate": 0.304
+  }
+ ],
+ "by_sex": [
+  {
+   "code": 0,
+   "label": "Female",
+   "n": 96,
+   "disease_rate": 0.25
+  },
+  {
+   "code": 1,
+   "label": "Male",
+   "n": 206,
+   "disease_rate": 0.553
+  }
+ ],
+ "by_exang": [
+  {
+   "code": 0,
+   "label": "No",
+   "n": 203,
+   "disease_rate": 0.305
+  },
+  {
+   "code": 1,
+   "label": "Yes",
+   "n": 99,
+   "disease_rate": 0.768
+  }
+ ],
+ "by_ca": [
+  {
+   "code": 0,
+   "label": "0",
+   "n": 175,
+   "disease_rate": 0.257
+  },
+  {
+   "code": 1,
+   "label": "1",
+   "n": 65,
+   "disease_rate": 0.677
+  },
+  {
+   "code": 2,
+   "label": "2",
+   "n": 38,
+   "disease_rate": 0.816
+  },
+  {
+   "code": 3,
+   "label": "3",
+   "n": 20,
+   "disease_rate": 0.85
+  },
+  {
+   "code": 4,
+   "label": "4",
+   "n": 4,
+   "disease_rate": 0.25
+  }
+ ],
+ "by_thal": [
+  {
+   "code": 0,
+   "label": "0",
+   "n": 2,
+   "disease_rate": 0.5
+  },
+  {
+   "code": 1,
+   "label": "1",
+   "n": 18,
+   "disease_rate": 0.667
+  },
+  {
+   "code": 2,
+   "label": "2",
+   "n": 165,
+   "disease_rate": 0.218
+  },
+  {
+   "code": 3,
+   "label": "3",
+   "n": 117,
+   "disease_rate": 0.761
+  }
+ ],
+ "by_slope": [
+  {
+   "code": 0,
+   "label": "0",
+   "n": 21,
+   "disease_rate": 0.571
+  },
+  {
+   "code": 1,
+   "label": "1",
+   "n": 140,
+   "disease_rate": 0.65
+  },
+  {
+   "code": 2,
+   "label": "2",
+   "n": 141,
+   "disease_rate": 0.248
+  }
+ ],
+ "feature_means": {
+  "age": {
+   "disease": 56.6,
+   "no_disease": 52.59
+  },
+  "trestbps": {
+   "disease": 134.4,
+   "no_disease": 129.25
+  },
+  "chol": {
+   "disease": 251.09,
+   "no_disease": 242.64
+  },
+  "thalach": {
+   "disease": 139.1,
+   "no_disease": 158.38
+  },
+  "oldpeak": {
+   "disease": 1.59,
+   "no_disease": 0.59
+  }
+ },
+ "comparison": [
+  {
+   "model": "KNN (k=15)",
+   "cv_accuracy": 0.8292,
+   "cv_std": 0.039
+  },
+  {
+   "model": "Logistic regression",
+   "cv_accuracy": 0.8265,
+   "cv_std": 0.0302
+  },
+  {
+   "model": "SVM (RBF)",
+   "cv_accuracy": 0.8225,
+   "cv_std": 0.0286
+  },
+  {
+   "model": "Random forest",
+   "cv_accuracy": 0.8265,
+   "cv_std": 0.0407
+  }
+ ],
+ "holdout": {
+  "n_test": 61,
+  "accuracy": 0.8197,
+  "sensitivity": 0.7143,
+  "specificity": 0.9091,
+  "confusion": {
+   "tn": 30,
+   "fp": 3,
+   "fn": 8,
+   "tp": 20
+  }
+ }
+}
